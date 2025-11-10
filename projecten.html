@@ -23,116 +23,130 @@
     crossorigin="anonymous" defer></script>
 </head>
 
-<body class="p-3 m-0 border-0 bd-example bg-light text-dark">
+<body class="bg-light text-dark">
 
   <!-- Navigatie -->
-  <!-- Navigatie -->
-<nav class="navbar navbar-expand-md bg-body-tertiary shadow-sm">
-  <div class="container-fluid">
-    <a class="navbar-brand fw-bold text-primary" href="index.html">
-      <img src="Logo_Robbe_Boel.png" alt="Logo Robbe Boel" width="60" height="60" class="me-2">
-      Robbe Boel
-    </a>
+  <nav class="navbar navbar-expand-md bg-body-tertiary shadow-sm">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold text-primary" href="index.html">
+        <img src="Logo_Robbe_Boel.png" alt="Logo Robbe Boel" width="60" height="60" class="me-2">
+        Robbe Boel
+      </a>
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Navigatie tonen">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Navigatie tonen">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <!-- Rechterkant -->
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
-        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Projecten
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="projecten.html">Overzicht Projecten</a></li>
-            <li><a class="dropdown-item" href="project1.html">Project 1</a></li>
-            <li><a class="dropdown-item" href="project2.html">Project 2</a></li>
-            <li><a class="dropdown-item" href="project3.html">Project 3</a></li>
-            <li><a class="dropdown-item" href="project4.html">Project 4</a></li>
-            <li><a class="dropdown-item" href="project5.html">Project 5</a></li>
-            <li><a class="dropdown-item" href="project6.html">Project 6</a></li>
-          </ul>
-        </li>
-      </ul>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <!-- Rechterkant -->
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Projecten
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="projecten.html">Overzicht Projecten</a></li>
+              <li><a class="dropdown-item" href="project1.html">Project 1</a></li>
+              <li><a class="dropdown-item" href="project2.html">Project 2</a></li>
+              <li><a class="dropdown-item" href="project3.html">Project 3</a></li>
+              <li><a class="dropdown-item" href="project4.html">Project 4</a></li>
+              <li><a class="dropdown-item" href="project5.html">Project 5</a></li>
+              <li><a class="dropdown-item" href="project6.html">Project 6</a></li>
+            </ul>
+          </li>
+        </ul>
 
-      <!-- Zoekbalk rechts -->
-      <form class="d-flex ms-3" role="search">
-        <input class="form-control me-2" type="search" placeholder="Zoeken" aria-label="Zoeken">
-        <button class="btn btn-outline-secondary btn-sm" type="submit">Zoek</button>
-      </form>
+        <!-- Zoekbalk rechts -->
+        <form class="d-flex ms-3" role="search">
+          <input class="form-control me-2" type="search" placeholder="Zoeken" aria-label="Zoeken">
+          <button class="btn btn-outline-secondary btn-sm" type="submit">Zoek</button>
+        </form>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
-  <main>
-    <section>
-      <h2>Projecten</h2>
-      <div class="project-grid">
+  <!-- Hoofdinhoud -->
+  <main class="container py-5">
+    <section class="text-center mb-5">
+      <h2 class="fw-bold mb-4">Projecten</h2>
+      <p class="text-muted">Hieronder vind je een overzicht van mijn belangrijkste projecten.</p>
+    </section>
 
-        <div class="project-card">
-          <img src="download.jpg" alt="Project 1">
-          <h3>Project 1</h3>
-          <p>Informatie over project.</p>
+    <!-- Projecten Grid -->
+    <section class="row g-4">
+      <div class="col-md-4 col-sm-6">
+        <div class="card border-0 shadow-sm h-100">
+          <img src="downloads.jpg" class="card-img-top" alt="Project 1">
+          <div class="card-body">
+            <h5 class="card-title">Project 1</h5>
+            <p class="card-text text-muted">Informatie over project.</p>
+          </div>
         </div>
+      </div>
 
-        <div class="project-card">
-          <img src="download.jpg" alt="Project 2">
-          <h3>Project 2</h3>
-          <p>Informatie over project.</p>
+      <div class="col-md-4 col-sm-6">
+        <div class="card border-0 shadow-sm h-100">
+          <img src="downloads.jpg" class="card-img-top" alt="Project 2">
+          <div class="card-body">
+            <h5 class="card-title">Project 2</h5>
+            <p class="card-text text-muted">Informatie over project.</p>
+          </div>
         </div>
+      </div>
 
-        <div class="project-card">
-          <img src="download.jpg" alt="Project 3">
-          <h3>Project 3</h3>
-          <p>Informatie over project.</p>
+      <div class="col-md-4 col-sm-6">
+        <div class="card border-0 shadow-sm h-100">
+          <img src="downloads.jpg" class="card-img-top" alt="Project 3">
+          <div class="card-body">
+            <h5 class="card-title">Project 3</h5>
+            <p class="card-text text-muted">Informatie over project.</p>
+          </div>
         </div>
+      </div>
 
-        <div class="project-card">
-          <img src="download.jpg" alt="Project 4">
-          <h3>Project 4</h3>
-          <p>Informatie over project.</p>
+      <div class="col-md-4 col-sm-6">
+        <div class="card border-0 shadow-sm h-100">
+          <img src="downloads.jpg" class="card-img-top" alt="Project 4">
+          <div class="card-body">
+            <h5 class="card-title">Project 4</h5>
+            <p class="card-text text-muted">Informatie over project.</p>
+          </div>
         </div>
+      </div>
 
-        <div class="project-card">
-          <img src="download.jpg" alt="Project 5">
-          <h3>Project 5</h3>
-          <p>Informatie over project.</p>
+      <div class="col-md-4 col-sm-6">
+        <div class="card border-0 shadow-sm h-100">
+          <img src="downloads.jpg" class="card-img-top" alt="Project 5">
+          <div class="card-body">
+            <h5 class="card-title">Project 5</h5>
+            <p class="card-text text-muted">Informatie over project.</p>
+          </div>
         </div>
+      </div>
 
-        <div class="project-card">
-          <img src="download.jpg" alt="Project 6">
-          <h3>Project 6</h3>
-          <p>Informatie over project.</p>
+      <div class="col-md-4 col-sm-6">
+        <div class="card border-0 shadow-sm h-100">
+          <img src="downloads.jpg" class="card-img-top" alt="Project 6">
+          <div class="card-body">
+            <h5 class="card-title">Project 6</h5>
+            <p class="card-text text-muted">Informatie over project.</p>
+          </div>
         </div>
-
       </div>
     </section>
 
-    <aside>
-      <h3>Extra informatie</h3>
-      <p>Hier vind je een overzicht van mijn belangrijkste projecten met korte beschrijvingen en resultaten.</p>
-    </aside>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 Robbe Boel</p>
-  </footer>
-
     <!-- Aside -->
-    <aside class="info-aside">
+    <aside class="mt-5 p-4 bg-body-tertiary rounded shadow-sm">
       <h3>Extra informatie</h3>
-      <p>Hier vind je een overzicht van mijn belangrijkste projecten met korte beschrijvingen en resultaten.</p>
+      <p>Hier vind je een overzicht van mijn belangrijkste projecten met korte beschrijvingen en resultaten. Elk project weerspiegelt mijn groei als ontwikkelaar en mijn passie voor webtechnologie.</p>
     </aside>
-
   </main>
 
-  <footer>
-    <p>&copy; 2025 Robbe Boel</p>
+  <footer class="text-center py-4 mt-5 border-top">
+    <p class="mb-0">&copy; 2025 Robbe Boel</p>
   </footer>
 
 </body>
