@@ -1,123 +1,147 @@
 <!DOCTYPE html>
 <html lang="nl-BE">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact | Robbe Boel</title>
-<!-- Bootstrap CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Robbe Boel</title>
 
-<!-- Bootstrap Icons -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-<!-- Custom CSS -->
-<link rel="stylesheet" href="css/style.css">
+  <!-- Leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" defer></script>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
 
+  <!-- JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" defer></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" defer></script>
 </head>
+
 <body class="bg-light text-dark">
-
-<!-- Leaflet CSS -->
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-
-<!-- Leaflet JS -->
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" defer></script>
-
 
 <!-- Navigatie -->
 <nav class="navbar navbar-expand-md bg-body-tertiary shadow-sm">
   <div class="container-fluid">
-    <a class="navbar-brand fw-bold text-primary" href="index.html">
+
+    <a class="navbar-brand fw-bold text-primary d-flex align-items-center" href="index.html">
       <img src="assets/images/Logo_Robbe_Boel.png" alt="Logo Robbe Boel" width="60" height="60" class="me-2">
       Robbe Boel
     </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Navigatie tonen">
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
     </button>
+
     <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
-          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Projecten</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="portfolio.html">Overzicht Projecten</a></li>
-              <li><a class="dropdown-item" href="Gestructureerd_bekabelen.html">Gestructureerd bekabelen</a></li>
-              <li><a class="dropdown-item" href="project2.html">Project 2</a></li>
-              <li><a class="dropdown-item" href="project3.html">Project 3</a></li>
-              <li><a class="dropdown-item" href="project4.html">Project 4</a></li>
-              <li><a class="dropdown-item" href="project5.html">Project 5</a></li>
-              <li><a class="dropdown-item" href="project6.html">Project 6</a></li>
-            </ul>
-          </li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-        </ul>
-      </div>
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Projecten</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="portfolio.html">Overzicht Projecten</a></li>
+            <li><a class="dropdown-item" href="Gestructureerd_bekabelen.html">Gestructureerd bekabelen</a></li>
+            <li><a class="dropdown-item" href="project2.html">Project 2</a></li>
+            <li><a class="dropdown-item" href="project3.html">Project 3</a></li>
+            <li><a class="dropdown-item" href="project4.html">Project 4</a></li>
+            <li><a class="dropdown-item" href="project5.html">Project 5</a></li>
+            <li><a class="dropdown-item" href="project6.html">Project 6</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
   </div>
 </nav>
 
-<!-- Contactgedeelte -->
-<main class="container my-5">
+<!-- Contactpagina -->
+<main class="container-fluid my-5 px-lg-5">
   <div class="row g-4">
 
     <!-- Contactformulier -->
-    <div class="col-12 col-md-5 order-1 bg-white p-4 rounded shadow-sm">
+    <div class="col-12 col-lg-6 bg-white p-4 rounded shadow-sm">
       <h1 class="fw-semibold mb-3">Stuur mij een bericht</h1>
-      <p class="text-secondary">Heb je een vraag? Ik sta voor je klaar. Stuur mij een bericht, dan neem ik zo snel mogelijk contact met je op.</p>
+      <p class="text-secondary">Heb je een vraag? Laat hier je bericht achter.</p>
 
-      <form action="mailto:robbe.boel@gmail.com" method="post" enctype="text/plain">
-        <div class="row g-3">
-          <div class="col-md-6">
-            <label class="form-label">Voornaam</label>
-            <input type="text" class="form-control" name="voornaam" required>
-          </div>
-          <div class="col-md-6">
-            <label class="form-label">Achternaam</label>
-            <input type="text" class="form-control" name="achternaam" required>
-          </div>
-          <div class="col-md-6">
-            <label class="form-label">E-mail</label>
-            <input type="email" class="form-control" name="email" required>
-          </div>
-          <div class="col-md-6">
-            <label class="form-label">Telefoonnummer</label>
-            <input type="tel" class="form-control" name="telefoonnummer">
-          </div>
-          <div class="col-12">
-            <label class="form-label">Bericht</label>
-            <textarea class="form-control" name="bericht" rows="5" required></textarea>
-          </div>
+      <form name="contact" method="POST" data-netlify="true" class="row g-3">
+
+        <div class="col-md-6">
+          <label class="form-label">Voornaam *</label>
+          <input type="text" name="voornaam" class="form-control" required>
         </div>
-        <button type="submit" class="btn btn-dark mt-3 px-4">Indienen</button>
+
+        <div class="col-md-6">
+          <label class="form-label">Achternaam *</label>
+          <input type="text" name="achternaam" class="form-control" required>
+        </div>
+
+        <div class="col-md-6">
+          <label class="form-label">E-mail *</label>
+          <input type="email" name="email" class="form-control" required placeholder="voorbeeld@email.com">
+        </div>
+
+        <div class="col-md-6">
+          <label class="form-label">Telefoonnummer</label>
+          <input type="tel" name="telefoonnummer" class="form-control">
+        </div>
+
+        <div class="col-12">
+          <label class="form-label">Bericht *</label>
+          <textarea name="bericht" class="form-control" rows="5" required></textarea>
+        </div>
+
+        <div class="col-12">
+          <button type="submit" class="btn btn-dark px-4">Indienen</button>
+        </div>
+
       </form>
     </div>
 
-    <!-- Locatie -->
-    <div class="col-12 col-md-5 order-2 d-flex justify-content-center align-items-center">
+    <!-- Kaart -->
+    <div class="col-12 col-lg-4">
       <div id="mapPuurs" class="rounded shadow-sm w-100" style="height: 550px;"></div>
     </div>
 
-    <!-- Aside -->
-    <aside class="col-12 col-md-2 order-3 border-start-0 border-md-start ps-0 ps-md-4">
-      <h2 class="text-uppercase fs-5 fw-bolder pt-3">Contact</h2>
-      <p>Robbe Boel<br>
-      </p>
+    <!-- Rechter Aside -->
+    <aside class="col-12 col-lg-2">
+      <div class="position-sticky" style="top:20px;">
 
-      <ul class="list-inline socials">
-        <li class="list-inline-item">
-          <a href="https://www.instagram.com/robbeboel/" target="_blank"><i class="bi bi-instagram blauwgrijs fs-5"></i></a>
-        </li>
-        <li class="list-inline-item">
-          <a href="https://www.facebook.com/robbe.boel?locale=nl_BE" target="_blank"><i class="bi bi-facebook blauwgrijs fs-5"></i></a>
-        </li>
-        <li class="list-inline-item">
-          <a href="https://www.linkedin.com/in/robbe-boel-55a900232/" target="_blank"><i class="bi bi-linkedin blauwgrijs fs-5"></i></a>
-        </li>
-        <li class="list-inline-item"></li>
-          <a href="mailto:robbe.boel@gmail.com" target="_blank"><i class="bi bi-envelope blauwgrijs fs-5"></i></a>
-        </li>
-      </ul>
+        <!-- Profielkaart -->
+        <div class="card shadow-sm border-0 mb-4">
+          <div class="card-body">
+            <h5 class="fw-bold mb-1">Robbe Boel</h5>
+            <p class="text-secondary small mb-2">Systeem- & Netwerkbeheer</p>
+
+            <div class="d-flex gap-3 mt-2">
+              <a href="https://www.instagram.com/robbeboel/" target="_blank"><i class="bi bi-instagram fs-5 text-primary"></i></a>
+              <a href="https://www.facebook.com/robbe.boel?locale=nl_BE" target="_blank"><i class="bi bi-facebook fs-5 text-primary"></i></a>
+              <a href="https://www.linkedin.com/in/robbe-boel-55a900232/" target="_blank"><i class="bi bi-linkedin fs-5 text-primary"></i></a>
+              <a href="mailto:robbe.boel@gmail.com"><i class="bi bi-envelope fs-5 text-primary"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skills -->
+        <div class="card shadow-sm border-0">
+          <div class="card-body">
+            <h5 class="fw-bold text-primary mb-3">Skills</h5>
+
+            <ul class="list-unstyled">
+              <li class="mb-2"><i class="bi bi-hdd-network text-primary me-2"></i>Netwerkbeheer</li>
+              <li class="mb-2"><i class="bi bi-shield-lock text-primary me-2"></i>Beveiliging</li>
+              <li class="mb-2"><i class="bi bi-pc-display text-primary me-2"></i>IT-systemen</li>
+              <li class="mb-2"><i class="bi bi-server text-primary me-2"></i>Serverbeheer</li>
+              <li class="mb-2"><i class="bi bi-tools text-primary me-2"></i>Probleemoplossend denken</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
     </aside>
 
   </div>
@@ -125,49 +149,32 @@
 
 <!-- Footer -->
 <footer class="footer mt-5 py-4 bg-black text-light">
-  <div class="container-fluid text-center text-md-start">
-    <div class="row align-items-center">
+  <div class="container text-center">
 
-      <!-- Linkerkant -->
-      <div class="col-md-4 mb-3 mb-md-0 text-md-start">
-        <p class="mb-0">
-        </p>
-      </div>
+    <img src="assets/images/Logo_Robbe_Boel.png" width="90" class="mb-2">
 
-      <!-- Midden -->
-      <div class="col-md-4 text-center">
-        <img src="assets/images/Logo_Robbe_Boel.png" alt="Logo Robbe Boel" width="90" class="mb-2">
-        <h5 class="fw-bold text-primary mb-0">Robbe Boel</h5>
-        <p class="small text-secondary">Computers are second nature to me</p>
-      </div>
+    <h5 class="fw-bold text-primary mb-0">Robbe Boel</h5>
+    <p class="small text-secondary">Computers are second nature to me</p>
 
-      <!-- Rechterkant -->
-      <div class="col-md-4 text-md-end">
-        <!-- Laat voorlopig leeg, je kan hier later iets toevoegen -->
-      </div>
-    </div>
+    <div class="small text-secondary mt-3">&copy; 2025 Portfolio Robbe Boel.</div>
 
-    <div class="text-center mt-3 small text-secondary">
-      &copy; 2025 portfolio. Alle rechten voorbehouden
-    </div>
   </div>
 </footer>
+
 <script>
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", () => {
 
-    // kaart aanmaken in div mapPuurs
-    let map = L.map('mapPuurs').setView([51.076031, 4.279113], 16);
+  const map = L.map("mapPuurs").setView([51.076031, 4.279113], 16);
 
-    // standaard OpenStreetMap tiles
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        maxZoom: 19,
-    }).addTo(map);
+  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    maxZoom: 19
+  }).addTo(map);
 
-    // marker op Puurs
-    L.marker([51.076031, 4.279113])
-        .addTo(map)
-        .bindPopup("<b>Puurs</b><br>België");
+  L.marker([51.076031, 4.279113])
+    .addTo(map)
+    .bindPopup("<b>Puurs</b><br>België");
 });
 </script>
+
 </body>
 </html>

@@ -1,5 +1,5 @@
 /* ============================================================
-   ALGEMENE INSTELLINGEN
+   ALGEMEEN
 ============================================================ */
 body {
   font-family: Arial, sans-serif;
@@ -12,9 +12,22 @@ h1, h2, h3 {
   font-weight: 700;
 }
 
+hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 2em 0;
+}
+
+ul {
+  padding-left: 1.5em;
+}
+
+.blauwgrijs { color: #0a2540; }
+.lichtgrijs { color: #555; }
+
 
 /* ============================================================
-   NAVIGATIE
+   NAVIGATIEBALK
 ============================================================ */
 .navbar {
   background-color: #ffffff !important;
@@ -55,29 +68,37 @@ header p {
 
 
 /* ============================================================
-   MAIN CONTENT + ASIDE
+   MAIN + ASIDE LAYOUT
 ============================================================ */
-
-/* Zorgt dat beide kolommen dezelfde hoogte pakken */
 .row {
+  display: flex;
+  justify-content: space-between;
   align-items: stretch;
 }
 
+/* MAIN */
 main {
-  background-color: #fff;
+  width: 70%;
+  background-color: #ffffff;
   padding: 2em;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  display: inline-block;
+  vertical-align: top;
 }
 
+/* ASIDE */
 aside {
+  width: 28%;
   background-color: #e9eff6;
-  padding: 2em 1.5em;
+  padding: 1.5em 1.2em;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 2%;
 }
 
-/* Contact titel */
 aside h2 {
   color: #0a2540;
   font-size: 1.1rem;
@@ -85,7 +106,6 @@ aside h2 {
   text-transform: uppercase;
 }
 
-/* Links in aside */
 aside a {
   color: #0d6efd;
   text-decoration: none;
@@ -95,51 +115,50 @@ aside a:hover {
   text-decoration: underline;
 }
 
-/* Iconen */
-.socials i {
+/* Social icons */
+aside .socials {
+  display: flex;
+  gap: 0.75em;
+  padding: 0;
+  margin-top: 1em;
+  list-style: none;
+}
+
+aside .socials i {
   color: #0a2540;
   transition: color 0.3s;
 }
 
-socials i:hover {
+aside .socials i:hover {
   color: #0d6efd;
 }
 
-/* Contactblok uniform gemaakt */
-.contact-block h2 {
-  margin-bottom: 0.75rem;
+
+/* ============================================================
+   RESPONSIVE (MOBIEL)
+============================================================ */
+@media (max-width: 768px) {
+
+  .row {
+    flex-direction: column;
+  }
+
+  main {
+    width: 100%;
+    order: 1;
+    margin-bottom: 1em;
+  }
+
+  aside {
+    width: 100%;
+    order: 2;
+    margin-left: 0;
+    margin-top: 1em;
+    padding: 1.5em 1.2em;
+    border-top: 2px solid #dee2e6;
+  }
 }
 
-.contact-block p {
-  margin-bottom: 0.75rem;
-}
-
-/* Iconenlijst */
-.contact-block .socials {
-  margin-top: 0.75rem;
-  display: flex;
-  gap: 0.75rem;
-  padding: 0;
-  list-style: none;
-}
-
-/* Zorgt dat aside minder interne padding heeft → dichter tegen rand */
-.contact-block {
-  padding-left: 0;
-  margin-right: -10px; /* dichter bij de rand zoals je vroeg */
-}
-/* Verkleint de horizontale marge van de content */
-main.container,
-main.container-fluid {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-}
-
-/* Verwijdert extra padding die Bootstrap op .row zet */
-main .row {
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-}
 
 /* ============================================================
    FOOTER
@@ -165,32 +184,7 @@ main .row {
 
 
 /* ============================================================
-   RESPONSIVE LAYOUT
-============================================================ */
-@media (max-width: 768px) {
-
-  .row {
-    flex-direction: column;
-  }
-
-  main {
-    order: 1;
-    margin-bottom: 1em;
-  }
-
-  aside {
-    order: 2;
-    border-left: none;
-    border-top: 2px solid #dee2e6;
-    margin-top: 1em;
-    padding-top: 1.5em;
-    width: 100%;
-  }
-}
-
-
-/* ============================================================
-   PROJECTEN
+   PROJECTEN GRID
 ============================================================ */
 .project-grid {
   display: grid;
@@ -230,26 +224,8 @@ main .row {
 
 
 /* ============================================================
-   OVERIGE VISUELE DETAILS
+   LEAFLET KAART
 ============================================================ */
-hr {
-  border: none;
-  border-top: 1px solid #ccc;
-  margin: 2em 0;
-}
-
-ul {
-  padding-left: 1.5em;
-}
-
-.blauwgrijs {
-  color: #0a2540;
-}
-
-.lichtgrijs {
-  color: #555;
-}
-
 #mapPuurs {
   width: 100%;
   height: 100%;

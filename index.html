@@ -1,153 +1,169 @@
 <!DOCTYPE html>
 <html lang="nl-BE">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Robbe Boel | Portfolio</title>
 
-<!-- Bootstrap CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-
-<!-- Bootstrap Icons -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
-<!-- Custom CSS -->
-<link rel="stylesheet" href="css/style.css">
-
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" defer></script>
-
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="bg-light text-dark">
 
-  <!-- Navigatie -->
-  <nav class="navbar navbar-expand-md bg-body-tertiary shadow-sm">
-    <div class="container-fluid">
-      <a class="navbar-brand fw-bold text-primary" href="index.html">
-        <img src="assets/images/Logo_Robbe_Boel.png" alt="Logo Robbe Boel" width="60" height="60" class="me-2">
-        Robbe Boel
-      </a>
+  <!-- NAVIGATIE -->
+<nav class="navbar navbar-expand-md bg-white shadow-sm py-2">
+  <div class="container-fluid px-4">
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Navigatie tonen">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <!-- LOGO LINKS -->
+    <a class="navbar-brand fw-bold text-primary d-flex align-items-center" href="index.html">
+      <img src="assets/images/Logo_Robbe_Boel.png" alt="Logo Robbe Boel" width="55" height="55" class="me-2">
+      Robbe Boel
+    </a>
 
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
-          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Projecten</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="portfolio.html">Overzicht Projecten</a></li>
-              <li><a class="dropdown-item" href="Gestructureerd_bekabelen.html">Gestructureerd bekabelen</a></li>
-              <li><a class="dropdown-item" href="project2.html">Project 2</a></li>
-              <li><a class="dropdown-item" href="project3.html">Project 3</a></li>
-              <li><a class="dropdown-item" href="project4.html">Project 4</a></li>
-              <li><a class="dropdown-item" href="project5.html">Project 5</a></li>
-              <li><a class="dropdown-item" href="project6.html">Project 6</a></li>
-            </ul>
-          </li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-        </ul>
-      </div>
+    <!-- HAMBURGER -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- NAV ITEMS RECHTS -->
+    <div class="collapse navbar-collapse justify-content-end" id="nav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Projecten</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="portfolio.html">Overzicht Projecten</a></li>
+            <li><a class="dropdown-item" href="Gestructureerd_bekabelen.html">Gestructureerd bekabelen</a></li>
+            <li><a class="dropdown-item" href="project2.html">Project 2</a></li>
+            <li><a class="dropdown-item" href="project3.html">Project 3</a></li>
+            <li><a class="dropdown-item" href="project4.html">Project 4</a></li>
+            <li><a class="dropdown-item" href="project5.html">Project 5</a></li>
+            <li><a class="dropdown-item" href="project6.html">Project 6</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
     </div>
-  </nav>
 
-  <!-- Header -->
+  </div>
+</nav>
+
+
+  <!-- HEADER -->
   <header class="text-center mt-5 mb-4">
-    <h1 class="text-primary fw-bold">Welkom op mijn portfolio</h1>
+    <h1 class="fw-bold text-primary">Welkom op mijn portfolio</h1>
     <p class="lead">Ik ben Robbe, student aan de AP Hogeschool Antwerpen. Ik volg de opleiding Systeem- en Netwerkbeheer.</p>
   </header>
 
-  <!-- Hoofdinhoud + Aside -->
-  <div class="container-fluid">
-  <div class="row">
+  <!-- PAGINA LAY-OUT -->
+  <div class="container" style="max-width: 1920px;">
+    <div class="row g-4">
 
-    <!-- Hoofdinhoud links -->
-    <main class="col-md-7 pe-5">
-      <section>
-        <article class="mb-4">
-          <h2 class="text-uppercase fs-5 fw-bolder text-primary">Over mij</h2>
+      <!-- MAIN CONTENT -->
+      <main class="col-lg-7">
+        <section>
+
+          <h2 class="text-uppercase fw-bold fs-5 text-primary">Over mij</h2>
           <p>
             Hallo, ik ben <strong>Robbe</strong>, student in de graduaatsopleiding 
-            <em>Systeem- en Netwerkbeheer</em>. Met een sterke interesse in technologie 
-            en computers bouw ik graag kennis en ervaring op in het beheren en optimaliseren 
+            <em>Systeem- en Netwerkbeheer</em>. Met een sterke interesse in technologie
+            en computers bouw ik graag kennis en ervaring op in het beheren en optimaliseren
             van IT-infrastructuren.
           </p>
+
           <p>
-            Ik ben leergierig, zelfstandig en oplossingsgericht. 
-            Ik werk graag in teamverband en communiceer open om samen tot de beste resultaten te komen.
+            Ik ben leergierig, zelfstandig en oplossingsgericht. Ik werk graag in teamverband
+            en communiceer open om samen tot de beste resultaten te komen.
           </p>
-        </article>
 
-        <hr>
+          <hr class="my-4">
 
-        <article class="mb-4">
-          <h2 class="text-uppercase fs-5 fw-bolder text-primary">Mijn focus</h2>
-          <ul>
+          <h2 class="text-uppercase fw-bold fs-5 text-primary">Mijn focus</h2>
+          <ul class="mb-4">
             <li>Beheer en optimalisatie van IT-systemen</li>
             <li>Netwerkconfiguratie en beveiliging</li>
             <li>Automatisering en efficiëntie in infrastructuurbeheer</li>
           </ul>
-        </article>
-      </section>
-    </main>
 
-    <!-- Foto -->
-    <div class="col-md-3 text-center d-flex align-items-start justify-content-center">
-      <img src="assets/images/Professione_foto.jpg"
-           class="img-fluid rounded shadow-sm mt-3"
-           alt="Foto van Robbe">
-    </div>
+        </section>
+      </main>
 
-    <!-- Contact rechts -->
-    <aside class="col-md-2 border-start ps-4">
-      <h2 class="text-uppercase fs-5 fw-bolder pt-3">Contact</h2>
+      <!-- FOTO -->
+      <div class="col-lg-3 text-center d-flex justify-content-center align-items-start">
+        <img src="assets/images/Professione_foto.jpg"
+             class="img-fluid rounded shadow-sm mt-2"
+             style="width: 100%; max-width: 320px; border-radius: 12px;"
+             alt="Foto van Robbe">
+      </div>
 
-      <p>
-        Robbe Boel<br>
-      </p>
+      <!-- ASIDE (RECHTS) -->
+      <aside class="col-lg-2">
+        <div class="position-sticky" style="top:20px;">
 
-      <ul class="list-inline socials">
-        <li class="list-inline-item">
-          <a href="https://www.instagram.com/robbeboel/" target="_blank"><i class="bi bi-instagram blauwgrijs fs-5"></i></a>
-        </li>
-        <li class="list-inline-item">
-          <a href="https://www.facebook.com/robbe.boel?locale=nl_BE" target="_blank"><i class="bi bi-facebook blauwgrijs fs-5"></i></a>
-        </li>
-        <li class="list-inline-item">
-          <a href="https://www.linkedin.com/in/robbe-boel-55a900232/" target="_blank"><i class="bi bi-linkedin blauwgrijs fs-5"></i></a>
-        </li>
-        <li class="list-inline-item"></li>
-          <a href="mailto:robbe.boel@gmail.com" target="_blank"><i class="bi bi-envelope blauwgrijs fs-5"></i></a>
-        </li>
-      </ul>
-    </aside>
-  </div>
-</div>
+          <!-- PROFIELKAART -->
+          <div class="card shadow-sm border-0 mb-4">
+            <div class="card-body">
+              <h5 class="fw-bold mb-1">Robbe Boel</h5>
+              <p class="text-secondary small mb-2">Systeem- & Netwerkbeheer</p>
 
-  <!-- Footer -->
-  <footer class="footer mt-5 py-4 bg-black text-light">
-    <div class="container-fluid text-center text-md-start">
-      <div class="row align-items-center">
-        <div class="col-md-4"></div>
+              <div class="d-flex gap-3 mt-2">
+                <a href="https://www.instagram.com/robbeboel/" target="_blank">
+                  <i class="bi bi-instagram fs-5 text-primary"></i>
+                </a>
+                <a href="https://www.facebook.com/robbe.boel?locale=nl_BE" target="_blank">
+                  <i class="bi bi-facebook fs-5 text-primary"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/robbe-boel-55a900232/" target="_blank">
+                  <i class="bi bi-linkedin fs-5 text-primary"></i>
+                </a>
+                <a href="mailto:robbe.boel@gmail.com">
+                  <i class="bi bi-envelope fs-5 text-primary"></i>
+                </a>
+              </div>
+            </div>
+          </div>
 
-        <div class="col-md-4 text-center">
-          <img src="assets/images/Logo_Robbe_Boel.png" alt="Logo Robbe Boel" width="90" class="mb-2">
-          <h5 class="fw-bold text-primary mb-0">Robbe Boel</h5>
-          <p class="small text-secondary">Computers are second nature to me</p>
+          <!-- SKILLS -->
+          <div class="card shadow-sm border-0">
+            <div class="card-body">
+              <h5 class="fw-bold text-primary mb-3">Skills</h5>
+
+              <ul class="list-unstyled">
+                <li class="mb-2"><i class="bi bi-hdd-network text-primary me-2"></i>Netwerkbeheer</li>
+                <li class="mb-2"><i class="bi bi-shield-lock text-primary me-2"></i>Beveiliging</li>
+                <li class="mb-2"><i class="bi bi-pc-display text-primary me-2"></i>IT-systemen</li>
+                <li class="mb-2"><i class="bi bi-server text-primary me-2"></i>Serverbeheer</li>
+                <li class="mb-2"><i class="bi bi-tools text-primary me-2"></i>Probleemoplossend denken</li>
+              </ul>
+
+            </div>
+          </div>
+
         </div>
+      </aside>
 
-        <div class="col-md-4"></div>
-      </div>
+    </div>
+  </div>
 
-      <div class="text-center mt-3 small text-secondary">
-        &copy; 2025 Portfolio. Alle rechten voorbehouden
-      </div>
+  <!-- FOOTER -->
+  <footer class="footer mt-5 py-4 bg-black text-light">
+    <div class="container text-center">
+      <img src="assets/images/Logo_Robbe_Boel.png" width="80" class="mb-2" alt="">
+      <h5 class="fw-bold text-primary mb-0">Robbe Boel</h5>
+      <p class="small text-secondary">Computers are second nature to me</p>
+      <p class="small text-secondary mb-0">&copy; 2025 Portfolio Robbe Boel.</p>
     </div>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
