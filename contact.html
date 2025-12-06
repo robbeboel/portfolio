@@ -68,7 +68,16 @@
       <h1 class="fw-semibold mb-3">Stuur mij een bericht</h1>
       <p class="text-secondary">Heb je een vraag? Laat hier je bericht achter.</p>
 
-      <form name="contact" method="POST" data-netlify="true" class="row g-3">
+      <!-- Netlify Formulier -->
+      <form name="contact" method="POST" data-netlify="true" action="/dankjewel.html" class="row g-3">
+
+        <!-- VERPLICHT -->
+        <input type="hidden" name="form-name" value="contact">
+
+        <!-- Anti-bot veld -->
+        <div style="display:none">
+          <input name="bot-field">
+        </div>
 
         <div class="col-md-6">
           <label class="form-label">Voornaam *</label>
@@ -163,7 +172,6 @@
 
 <script>
 document.addEventListener("DOMContentLoaded", () => {
-
   const map = L.map("mapPuurs").setView([51.076031, 4.279113], 16);
 
   L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
