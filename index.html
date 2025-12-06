@@ -2,21 +2,21 @@
 <html lang="nl-BE">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Robbe Boel | Portfolio</title>
 
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Bootstrap Icons -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="css/style.css">
+<!-- Custom CSS -->
+<link rel="stylesheet" href="css/style.css">
 
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" defer></script>
+
 </head>
 
 <body class="bg-light text-dark">
@@ -25,7 +25,7 @@
   <nav class="navbar navbar-expand-md bg-body-tertiary shadow-sm">
     <div class="container-fluid">
       <a class="navbar-brand fw-bold text-primary" href="index.html">
-        <img src="Logo_Robbe_Boel.png" alt="Logo Robbe Boel" width="60" height="60" class="me-2">
+        <img src="assets/images/Logo_Robbe_Boel.png" alt="Logo Robbe Boel" width="60" height="60" class="me-2">
         Robbe Boel
       </a>
 
@@ -37,12 +37,11 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
           <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Projecten</a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="projecten.html">Overzicht Projecten</a></li>
-              <li><a class="dropdown-item" href="project1.html">Project 1</a></li>
+              <li><a class="dropdown-item" href="portfolio.html">Overzicht Projecten</a></li>
+              <li><a class="dropdown-item" href="Gestructureerd_bekabelen.html">Gestructureerd bekabelen</a></li>
               <li><a class="dropdown-item" href="project2.html">Project 2</a></li>
               <li><a class="dropdown-item" href="project3.html">Project 3</a></li>
               <li><a class="dropdown-item" href="project4.html">Project 4</a></li>
@@ -50,13 +49,8 @@
               <li><a class="dropdown-item" href="project6.html">Project 6</a></li>
             </ul>
           </li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
         </ul>
-
-        <!-- Zoekbalk -->
-        <form class="d-flex ms-3" role="search">
-          <input class="form-control me-2" type="search" placeholder="Zoeken" aria-label="Zoeken">
-          <button class="btn btn-outline-secondary btn-sm" type="submit">Zoek</button>
-        </form>
       </div>
     </div>
   </nav>
@@ -69,62 +63,70 @@
 
   <!-- Hoofdinhoud + Aside -->
   <div class="container-fluid">
-    <div class="row">
+  <div class="row">
 
-      <!-- Hoofdinhoud -->
-      <main class="col-md-9">
-        <section>
-          <article class="mb-4">
-            <h2 class="text-uppercase fs-5 fw-bolder text-primary">Over mij</h2>
-            <p>
-              Hallo, ik ben <strong>Robbe</strong>, student in de graduaatsopleiding 
-              <em>Systeem- en Netwerkbeheer</em>. Met een sterke interesse in technologie 
-              en computers bouw ik graag kennis en ervaring op in het beheren en optimaliseren 
-              van IT-infrastructuren.
-            </p>
-            <p>
-              Ik ben leergierig, zelfstandig en oplossingsgericht. 
-              Ik werk graag in teamverband en communiceer open om samen tot de beste resultaten te komen.
-            </p>
-          </article>
+    <!-- Hoofdinhoud links -->
+    <main class="col-md-7 pe-5">
+      <section>
+        <article class="mb-4">
+          <h2 class="text-uppercase fs-5 fw-bolder text-primary">Over mij</h2>
+          <p>
+            Hallo, ik ben <strong>Robbe</strong>, student in de graduaatsopleiding 
+            <em>Systeem- en Netwerkbeheer</em>. Met een sterke interesse in technologie 
+            en computers bouw ik graag kennis en ervaring op in het beheren en optimaliseren 
+            van IT-infrastructuren.
+          </p>
+          <p>
+            Ik ben leergierig, zelfstandig en oplossingsgericht. 
+            Ik werk graag in teamverband en communiceer open om samen tot de beste resultaten te komen.
+          </p>
+        </article>
 
-          <hr>
+        <hr>
 
-          <article class="mb-4">
-            <h2 class="text-uppercase fs-5 fw-bolder text-primary">Mijn focus</h2>
-            <ul>
-              <li>Beheer en optimalisatie van IT-systemen</li>
-              <li>Netwerkconfiguratie en beveiliging</li>
-              <li>Automatisering en efficiëntie in infrastructuurbeheer</li>
-            </ul>
-          </article>
-        </section>
-      </main>
+        <article class="mb-4">
+          <h2 class="text-uppercase fs-5 fw-bolder text-primary">Mijn focus</h2>
+          <ul>
+            <li>Beheer en optimalisatie van IT-systemen</li>
+            <li>Netwerkconfiguratie en beveiliging</li>
+            <li>Automatisering en efficiëntie in infrastructuurbeheer</li>
+          </ul>
+        </article>
+      </section>
+    </main>
 
-      <!-- Aside -->
-      <aside class="col-md-3 border-start ps-5">
-        <h2 class="text-uppercase fs-5 fw-bolder pt-3">Contact</h2>
-        <p>
-          POWER web<br>
-          <a href="mailto:powerweb@ap.be">powerweb@ap.be</a><br>
-          +32 45 67 89
-        </p>
-
-        <ul class="list-inline socials">
-          <li class="list-inline-item">
-            <a href="https://www.instagram.com/robbeboel/" target="_blank"><i class="bi bi-instagram blauwgrijs fs-5"></i></a>
-          </li>
-          <li class="list-inline-item">
-            <a href="https://www.facebook.com/robbe.boel?locale=nl_BE" target="_blank"><i class="bi bi-facebook blauwgrijs fs-5"></i></a>
-          </li>
-          <li class="list-inline-item">
-            <a href="https://www.linkedin.com/in/robbe-boel-55a900232/" target="_blank"><i class="bi bi-linkedin blauwgrijs fs-5"></i></a>
-          </li>
-        </ul>
-      </aside>
-
+    <!-- Foto -->
+    <div class="col-md-3 text-center d-flex align-items-start justify-content-center">
+      <img src="assets/images/Professione_foto.jpg"
+           class="img-fluid rounded shadow-sm mt-3"
+           alt="Foto van Robbe">
     </div>
+
+    <!-- Contact rechts -->
+    <aside class="col-md-2 border-start ps-4">
+      <h2 class="text-uppercase fs-5 fw-bolder pt-3">Contact</h2>
+
+      <p>
+        Robbe Boel<br>
+      </p>
+
+      <ul class="list-inline socials">
+        <li class="list-inline-item">
+          <a href="https://www.instagram.com/robbeboel/" target="_blank"><i class="bi bi-instagram blauwgrijs fs-5"></i></a>
+        </li>
+        <li class="list-inline-item">
+          <a href="https://www.facebook.com/robbe.boel?locale=nl_BE" target="_blank"><i class="bi bi-facebook blauwgrijs fs-5"></i></a>
+        </li>
+        <li class="list-inline-item">
+          <a href="https://www.linkedin.com/in/robbe-boel-55a900232/" target="_blank"><i class="bi bi-linkedin blauwgrijs fs-5"></i></a>
+        </li>
+        <li class="list-inline-item"></li>
+          <a href="mailto:robbe.boel@gmail.com" target="_blank"><i class="bi bi-envelope blauwgrijs fs-5"></i></a>
+        </li>
+      </ul>
+    </aside>
   </div>
+</div>
 
   <!-- Footer -->
   <footer class="footer mt-5 py-4 bg-black text-light">
@@ -133,7 +135,7 @@
         <div class="col-md-4"></div>
 
         <div class="col-md-4 text-center">
-          <img src="Logo_Robbe_Boel.png" alt="Logo Robbe Boel" width="90" class="mb-2">
+          <img src="assets/images/Logo_Robbe_Boel.png" alt="Logo Robbe Boel" width="90" class="mb-2">
           <h5 class="fw-bold text-primary mb-0">Robbe Boel</h5>
           <p class="small text-secondary">Computers are second nature to me</p>
         </div>
