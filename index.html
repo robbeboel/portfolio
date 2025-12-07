@@ -13,14 +13,13 @@
 </head>
 <body class="bg-light text-dark">
 <!-- NAVIGATIE -->
-<nav class="navbar navbar-expand-md bg-white shadow-sm py-2">
+<nav class="navbar navbar-expand-md navbar-light shadow-sm py-2">
   <div class="container-fluid px-4">
-    <!-- LOGO LINKS -->
+    <!-- LOGO -->
     <a class="navbar-brand fw-bold text-primary d-flex align-items-center" href="index.html">
       <img src="assets/images/Logo_Robbe_Boel.png" alt="Logo Robbe Boel" width="55" height="55" class="me-2">
       Robbe Boel
     </a>
-    <!-- HAMBURGER -->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -49,15 +48,15 @@
   <!-- HEADER -->
   <header class="text-center mt-5 mb-4">
     <h1 class="fw-bold text-primary">Welkom op mijn portfolio</h1>
-    <p class="lead">Ik ben Robbe, student aan de AP Hogeschool Antwerpen. Ik volg de opleiding Systeem- en Netwerkbeheer.</p>
+    <p class="lead">Ik ben Robbe, student aan de AP Hogeschool Antwerpen.</p>
   </header>
   <!-- PAGINA LAY-OUT -->
   <div class="container" style="max-width: 1920px;">
     <div class="row g-4">
-      <!-- MAIN CONTENT -->
+      <!-- MAIN -->
       <main class="col-lg-7">
         <section>
-          <h2 class="text-uppercase fw-bold fs-5 text-primary">Over mij</h2>
+          <h2 class="text-uppercase fw-bold fs-5 text-primary">Mijn Profiel</h2>
           <p>
             Hallo, ik ben <strong>Robbe</strong>, student in de graduaatsopleiding 
             <em>Systeem- en Netwerkbeheer</em>. Ik heb een grote interesse in technologie
@@ -88,12 +87,11 @@
       <!-- ASIDE -->
       <aside class="col-lg-2">
         <div class="position-sticky" style="top:20px;">
-          <!-- PROFIELKAART -->
+          <!-- PROFIEL -->
           <div class="card shadow-sm border-0 mb-4">
             <div class="card-body">
               <h5 class="fw-bold mb-1">Robbe Boel</h5>
               <p class="text-secondary small mb-2">Systeem- & Netwerkbeheer</p>
-
               <div class="d-flex gap-3 mt-2">
                 <a href="https://www.instagram.com/robbeboel/" target="_blank">
                   <i class="bi bi-instagram fs-5 text-primary"></i>
@@ -128,16 +126,22 @@
     </div>
   </div>
 
-  <!-- FOOTER -->
-  <footer class="footer mt-5 py-4 bg-black text-light">
-    <div class="container text-center">
-      <img src="assets/images/Logo_Robbe_Boel.png" width="80" class="mb-2" alt="">
-      <h5 class="fw-bold text-primary mb-0">Robbe Boel</h5>
-      <p class="small text-secondary">Computers are second nature to me</p>
-      <p class="small text-secondary mb-0">&copy; 2025 Portfolio Robbe Boel.</p>
-    </div>
-  </footer>
+<!-- Footer -->
+<footer class="footer mt-5 py-4 bg-black text-light">
+  <div class="container text-center">
 
+    <img src="assets/images/Logo_Robbe_Boel.png" width="90" class="mb-2" alt="Logo Robbe Boel">
+
+    <h5 class="fw-bold text-primary mb-0">Robbe Boel</h5>
+    <p class="small text-secondary">Computers are second nature to me</p>
+
+    <div class="small text-secondary mt-3">
+      &copy; <span id="year"></span> Portfolio Robbe Boel.
+    </div>
+
+  </div>
+</footer>
+<script src="script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 

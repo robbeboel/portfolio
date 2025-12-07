@@ -1,6 +1,10 @@
 /* ============================================================
    ALGEMEEN
 ============================================================ */
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -29,21 +33,21 @@ ul {
    NAVIGATIEBALK
 ============================================================ */
 .navbar {
-  background-color: #ffffff !important;
-  border-bottom: 1px solid #ffffff;
+  background-color: #fff !important;
+  border-bottom: 1px solid #fff;
 }
 
 .navbar-brand img {
   border-radius: 50%;
 }
 
-.navbar a.nav-link {
+.navbar .nav-link {
   color: #0a2540;
-  transition: color 0.3s;
+  transition: color 0.3s ease;
 }
 
-.navbar a.nav-link:hover,
-.navbar a.nav-link.active {
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
   color: #0d6efd;
 }
 
@@ -65,35 +69,29 @@ header p {
 }
 
 /* ============================================================
-   MAIN + ASIDE LAYOUT
+   LAYOUT
 ============================================================ */
 .row {
   display: flex;
   justify-content: space-between;
   align-items: stretch;
+  gap: 2%;
 }
 
-/* MAIN */
 main {
-  width: 70%;
-  background-color: #ffffff;
+  flex: 0 0 70%;
+  background-color: #fff;
   padding: 2em;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-  display: inline-block;
-  vertical-align: top;
 }
 
-/* ASIDE */
 aside {
-  width: 28%;
+  flex: 0 0 28%;
   background-color: #e9eff6;
   padding: 1.5em 1.2em;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-  display: inline-block;
-  vertical-align: top;
-  margin-left: 2%;
 }
 
 aside h2 {
@@ -123,39 +121,36 @@ aside .socials {
 
 aside .socials i {
   color: #0a2540;
-  transition: color 0.3s;
+  transition: color 0.3s ease;
 }
 
 aside .socials i:hover {
   color: #0d6efd;
 }
 
-
 /* ============================================================
-   RESPONSIVE (MOBIEL)
+   RESPONSIVE
 ============================================================ */
 @media (max-width: 768px) {
-
   .row {
     flex-direction: column;
   }
 
-  main {
+  main,
+  aside {
+    flex: 1 1 100%;
     width: 100%;
-    order: 1;
+  }
+
+  main {
     margin-bottom: 1em;
   }
 
   aside {
-    width: 100%;
-    order: 2;
-    margin-left: 0;
     margin-top: 1em;
-    padding: 1.5em 1.2em;
     border-top: 2px solid #dee2e6;
   }
 }
-
 
 /* ============================================================
    FOOTER
@@ -179,7 +174,6 @@ aside .socials i:hover {
   text-decoration: underline;
 }
 
-
 /* ============================================================
    PROJECTEN
 ============================================================ */
@@ -192,15 +186,15 @@ aside .socials i:hover {
 .project-card {
   background-color: #fff;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
   padding: 1em;
-  transition: transform 0.2s, box-shadow 0.2s;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .project-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
 
 .project-card img {

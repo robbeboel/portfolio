@@ -8,33 +8,26 @@
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
   <!-- Leaflet -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-
   <!-- Custom CSS -->
   <link rel="stylesheet" href="css/style.css">
-
   <!-- JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" defer></script>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" defer></script>
 </head>
-
 <body class="bg-light text-dark">
 
 <!-- Navigatie -->
-<nav class="navbar navbar-expand-md bg-body-tertiary shadow-sm">
+<nav class="navbar navbar-expand-md navbar-light shadow-sm">
   <div class="container-fluid">
-
     <a class="navbar-brand fw-bold text-primary d-flex align-items-center" href="index.html">
       <img src="assets/images/Logo_Robbe_Boel.png" alt="Logo Robbe Boel" width="60" height="60" class="me-2">
       Robbe Boel
     </a>
-
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
     </button>
-
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
@@ -51,11 +44,9 @@
             <li><a class="dropdown-item" href="project6.html">Project 6</a></li>
           </ul>
         </li>
-
         <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
       </ul>
     </div>
-
   </div>
 </nav>
 
@@ -125,11 +116,11 @@
       <div id="mapPuurs" class="rounded shadow-sm w-100" style="height: 550px;"></div>
     </div>
 
-    <!-- Rechter Aside -->
+    <!-- Aside -->
     <aside class="col-12 col-lg-2">
       <div class="position-sticky" style="top:20px;">
 
-        <!-- Profielkaart -->
+        <!-- Profiel -->
         <div class="card shadow-sm border-0 mb-4">
           <div class="card-body">
             <h5 class="fw-bold mb-1">Robbe Boel</h5>
@@ -169,29 +160,17 @@
 <footer class="footer mt-5 py-4 bg-black text-light">
   <div class="container text-center">
 
-    <img src="assets/images/Logo_Robbe_Boel.png" width="90" class="mb-2">
+    <img src="assets/images/Logo_Robbe_Boel.png" width="90" class="mb-2" alt="Logo Robbe Boel">
 
     <h5 class="fw-bold text-primary mb-0">Robbe Boel</h5>
     <p class="small text-secondary">Computers are second nature to me</p>
 
-    <div class="small text-secondary mt-3">&copy; 2025 Portfolio Robbe Boel.</div>
+    <div class="small text-secondary mt-3">
+      &copy; <span id="year"></span> Portfolio Robbe Boel.
+    </div>
 
   </div>
 </footer>
-
-<script>
-document.addEventListener("DOMContentLoaded", () => {
-  const map = L.map("mapPuurs").setView([51.076031, 4.279113], 16);
-
-  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-    maxZoom: 19
-  }).addTo(map);
-
-  L.marker([51.076031, 4.279113])
-    .addTo(map)
-    .bindPopup("<b>Puurs</b><br>België");
-});
-</script>
-
+<script src="script.js"></script>
 </body>
 </html>
